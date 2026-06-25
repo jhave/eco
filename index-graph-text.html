@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026)</title>
+
+  <meta name="description" content="Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026). A fact-checked index: global veganism avoids roughly 130 times more CO2e than shutting down all AI; golf consumes five to thirteen times more blue water than AI. Every figure traced to peer-reviewed sources.">
+  <meta name="author" content="Claude (Anthropic), from a prompt by David Jhave Johnston">
+  <meta name="keywords"
+    content="carbon footprint, water footprint, AI vs veganism, greenhouse gas, data centers, Poore Nemecek, Hayek, de Vries-Gao, golf water, climate, June 2026">
+  <meta name="robot" content="index,follow">
+  <meta name="date" content="2026-06-25">
+
+  <meta property="og:title" content="Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026)">
+  <meta property="og:description" content="Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026). A fact-checked index: global veganism avoids roughly 130 times more CO2e than shutting down all AI; golf consumes five to thirteen times more blue water than AI. Every figure traced to peer-reviewed sources.">
+  <meta property="og:image" content="https://glia.ca/2026/ccai/img/glia-bw.webp">
+  <meta property="og:url" content="https://glia.ca/2026/footprints/">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-06-25">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026)">
+  <meta name="twitter:description" content="Carbon and Water Footprint Data: AI vs Veganism (as of June 25, 2026). A fact-checked index: global veganism avoids roughly 130 times more CO2e than shutting down all AI; golf consumes five to thirteen times more blue water than AI. Every figure traced to peer-reviewed sources.">
+  <meta name="twitter:image" content="https://glia.ca/2026/ccai/img/glia-bw.webp">
+
+  <link rel="shortcut icon" href="../../glia.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Libre Baskerville', 'Georgia', serif;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      line-height: 1.3;
+      color: #222;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: .1rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: .6rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-bottom: .6rem;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    .abstract {
+      font-style: italic;
+      border-left: 4px solid #666;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .key-figure {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 2rem 0;
+      color: #999;
+    }
+
+    .footnote {
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      margin-top: 3rem;
+    }
+
+    blockquote,
+    .quote {
+      margin: 1.5rem 0;
+      padding: 0.5rem 1.5rem;
+      border-left: 3px solid #ccc;
+      font-style: italic;
+      color: #555;
+    }
+
+    a {
+      color: #c00;
+      text-decoration: none;
+      border-bottom: 1px dotted #c00;
+    }
+
+    a:hover {
+      color: #900;
+      border-bottom: 1px solid #900;
+    }
+
+    .section,
+    .essay-section {
+      margin: 3rem 0;
+    }
+
+    .essay-section h3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .highlight {
+      background-color: #f0f4f8;
+      padding: 1.5rem;
+      border-left: 4px solid #c00;
+      margin: 1.5rem 0;
+    }
+
+    /* Scenario dashboard grid & card styles */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .scenario-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .scenario-card {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .scenario-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    }
+
+    .scenario-card.electricity {
+      border-top: 4px solid #d97706;
+    }
+
+    .scenario-card.carbon {
+      border-top: 4px solid #4b5563;
+    }
+
+    .scenario-card.water {
+      border-top: 4px solid #2563eb;
+    }
+
+    .scenario-card.matter {
+      border-top: 4px solid #7c3aed;
+    }
+
+    .scenario-card-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.35rem;
+    }
+
+    .scenario-card.electricity .scenario-card-header {
+      color: #b45309;
+    }
+
+    .scenario-card.carbon .scenario-card-header {
+      color: #374151;
+    }
+
+    .scenario-card.water .scenario-card-header {
+      color: #1d4ed8;
+    }
+
+    .scenario-card.matter .scenario-card-header {
+      color: #6d28d9;
+    }
+
+    .scenario-value-large {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #1e293b;
+      margin: 0.25rem 0;
+      line-height: 1.1;
+    }
+
+    .scenario-trend {
+      font-size: 0.88rem;
+      color: #475569;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+
+    .scenario-cone {
+      background-color: #e2e8f0;
+      height: 6px;
+      border-radius: 3px;
+      position: relative;
+      margin: 0.75rem 0;
+    }
+
+    .scenario-cone-bar {
+      position: absolute;
+      height: 100%;
+      border-radius: 3px;
+    }
+
+    .scenario-card.electricity .scenario-cone-bar {
+      background-color: #fcd34d;
+    }
+
+    .scenario-card.carbon .scenario-cone-bar {
+      background-color: #9ca3af;
+    }
+
+    .scenario-card.water .scenario-cone-bar {
+      background-color: #93c5fd;
+    }
+
+    .scenario-card.matter .scenario-cone-bar {
+      background-color: #c4b5fd;
+    }
+
+    .scenario-cone-marker {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: -2px;
+      transform: translateX(-50%);
+    }
+
+    .scenario-card.electricity .scenario-cone-marker {
+      background-color: #d97706;
+    }
+
+    .scenario-card.carbon .scenario-cone-marker {
+      background-color: #4b5563;
+    }
+
+    .scenario-card.water .scenario-cone-marker {
+      background-color: #2563eb;
+    }
+
+    .scenario-card.matter .scenario-cone-marker {
+      background-color: #7c3aed;
+    }
+
+    .scenario-context {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.45;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 0.75rem;
+      margin-top: auto;
+    }
+
+    .scenario-sources {
+      font-size: 0.75rem;
+      color: #64748b;
+      margin-top: 0.75rem;
+      border-top: 1px dashed #e2e8f0;
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .scenario-sources a {
+      color: #3b82f6;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .scenario-time-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    .scenario-card.electricity .scenario-time-badge {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+
+    .scenario-card.carbon .scenario-time-badge {
+      background-color: #e2e8f0;
+      color: #1e293b;
+    }
+
+    .scenario-card.water .scenario-time-badge {
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+
+    .scenario-card.matter .scenario-time-badge {
+      background-color: #f3e8ff;
+      color: #5b21b6;
+    }
+
+    /* TL;DR Stats Bar styles */
+    .tldr-stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0 2rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    @media (max-width: 900px) {
+      .tldr-stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tldr-stats-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .tldr-stat-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .tldr-stat-col:not(:last-child) {
+      border-right: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 900px) {
+      .tldr-stat-col:nth-child(even) {
+        border-right: none;
+      }
+
+      .tldr-stat-col:nth-child(1),
+      .tldr-stat-col:nth-child(2) {
+        border-bottom: 1px dashed #e2e8f0;
+        padding-bottom: 1rem;
+      }
+
+      .tldr-stat-col:nth-child(3),
+      .tldr-stat-col:nth-child(4) {
+        padding-top: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tldr-stat-col {
+        border-right: none !important;
+        border-bottom: 1px dashed #e2e8f0 !important;
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+      }
+
+      .tldr-stat-col:first-child {
+        padding-top: 0 !important;
+      }
+
+      .tldr-stat-col:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+      }
+    }
+
+    .tldr-stat-val {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #b91c1c;
+      /* A strong brand red for key highlights */
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .tldr-stat-lbl {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.3;
+    }
+
+    .tldr-stat-lbl a {
+      color: #3b82f6;
+      text-decoration: underline;
+      font-weight: 500;
+      text-transform: none;
+      /* Keep the citation text casing normal */
+      letter-spacing: normal;
+    }
+
+    /* Table of Contents Panel Styles */
+    .toc-panel {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .toc-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .toc-item {
+      display: block;
+      background-color: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-decoration: none !important;
+      color: inherit !important;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .toc-item:hover {
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+
+    .toc-item-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .toc-item:hover .toc-item-title {
+      color: #2563eb;
+    }
+
+    .toc-item-desc {
+      font-size: 0.8rem;
+      color: #64748b;
+      line-height: 1.35;
+    }
+
+    .data-point {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #c00;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 2rem 0;
+    }
+
+    .conclusion,
+    .author-note {
+      font-style: italic;
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .header-image,
+    .footer-image {
+      width: 100%;
+      max-width: 800px;
+      margin: 2rem 0;
+      display: block;
+    }
+
+    .references,
+    .works-cited {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-top: 3rem;
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+
+    .references h3,
+    .works-cited h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .references ul {
+      padding-left: 1.5rem;
+    }
+
+    .references li {
+      margin-bottom: 1rem;
+    }
+
+    .reference-item {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      text-indent: -2rem;
+    }
+
+    .works-cited p {
+      margin-bottom: 1rem;
+    }
+
+    .chart-notes {
+      font-size: 0.75rem;
+      font-style: italic;
+      margin-top: 1rem;
+      border-left: 3px solid #eee;
+      padding-left: 1rem;
+    }
+
+    .methodology {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .category-breakdowns {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .category-card {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .category-card h4 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .category-card p {
+      margin-bottom: 0.5rem;
+    }
+
+    .emissions-value {
+      font-weight: bold;
+      color: #3B82F6;
+    }
+
+    .usage-metric {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .methodological-note {
+      font-size: 0.85rem;
+      color: #666;
+      border-left: 3px solid #eee;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Responsive table wrapper */
+    .responsive-table {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Style the table */
+    .responsive-table table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    /* Header styles */
+    .responsive-table th {
+      background-color: #f2f2f2;
+      text-align: left;
+      padding: 8px;
+      font-weight: bold;
+    }
+
+    /* Cell styles */
+    .responsive-table td {
+      padding: 8px;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Zebra striping */
+    .responsive-table tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    /* Mobile hint */
+    @media (max-width: 768px) {
+      .responsive-table::before {
+        content: 'Swipe left/right to view full table →';
+        display: block;
+        font-size: 0.8rem;
+        color: #666;
+        margin-bottom: 6px;
+      }
+    }
+
+    /* ----- bar charts (same grammar as the 2025 essay) ----- */
+    .emissions-chart {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    }
+
+    .emissions-chart h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .emissions-chart h3 {
+      margin-bottom: 1.25rem;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .chart-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-bottom: 0.8rem;
+      width: 100%;
+    }
+
+    .chart-label {
+      order: 1;
+      padding-right: 10px;
+    }
+
+    .chart-label .title {
+      display: inline;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .chart-label .subtitle {
+      display: inline;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .chart-bar-container {
+      order: 3;
+      flex-basis: 100%;
+      height: auto;
+      position: static;
+    }
+
+    .chart-bar {
+      display: block;
+      position: static;
+      height: 9px;
+      margin: 2px 0 0;
+      background-color: #F9A825;
+      border-radius: 2px;
+      max-width: 100%;
+      min-width: 8px;
+    }
+
+    /* dedicated AI is colored sienna in carbon charts; water charts use blue (non-AI) and dark blue (AI) */
+    .chart-bar.ai {
+      background-color: #A0522D;
+    }
+
+    .emissions-chart.water .chart-bar {
+      background-color: #3B82F6;
+    }
+
+    .emissions-chart.water .chart-bar.ai {
+      background-color: #1e3a8a;
+    }
+
+    .chart-value {
+      order: 2;
+      margin-left: auto;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* Ensure minimal bar visibility — all chart bars floor at 8px so visual
+       order never inverts against the printed values */
+    .chart-bar {
+      min-width: 8px;
+    }
+
+    .tiny .chart-bar {
+      min-width: 8px;
+    }
+
+    /* change-markers vs the May 2025 essay */
+    .delta {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #c00;
+    }
+
+    .delta.new {
+      color: #3B82F6;
+    }
+
+    .delta.same {
+      color: #999;
+    }
+
+    .pull {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #555;
+      margin: 2.5rem auto;
+      max-width: 672px;
+      line-height: 1.6;
+    }
+
+    details.appendix>summary {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+      border: 2px solid #c00;
+      border-radius: 6px;
+      font-family: system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #c00;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    details.appendix>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.appendix>summary:hover {
+      background: #c00;
+      color: #fff;
+    }
+
+    details.appendix[open]>summary {
+      margin-bottom: 1rem;
+    }
+
+    .toc {
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.5rem 0;
+    }
+
+    .toc a {
+      margin: 0 0.6rem;
+    }
+
+    /* ----- progressive disclosure (chevron folds) ----- */
+    details.fold {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 0.6rem 1rem;
+      margin: 1rem 0;
+      background-color: #fafafa;
+    }
+
+    details.fold>summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #444;
+      font-size: 0.95rem;
+      font-family: system-ui, sans-serif;
+      list-style: none;
+    }
+
+    details.fold>summary::before {
+      content: "▸ ";
+      color: #c00;
+    }
+
+    details.fold[open]>summary::before {
+      content: "▾ ";
+    }
+
+    details.fold>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    /* ----- common ground & fork ----- */
+    .commonground {
+      text-align: center;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #222;
+      margin: 2.5rem auto 1rem;
+      max-width: 620px;
+      line-height: 1.5;
+    }
+
+    .fork {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .fork a {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+      border: 2px solid #c00;
+      border-radius: 6px;
+      font-family: system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #c00;
+    }
+
+    .fork a:hover {
+      background: #c00;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .fork {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .path {
+      border: 1px solid #eee;
+      border-left: 4px solid #c00;
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      background: #fdfdfd;
+    }
+
+    .path h4 {
+      margin-top: 0;
+      font-style: normal;
+      font-family: system-ui, sans-serif;
+      font-size: 1.05rem;
+    }
+
+    /* ----- floating approx badge ----- */
+    .approx-badge {
+      position: fixed;
+      bottom: 14px;
+      right: 14px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #c00;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      z-index: 99;
+    }
+
+    .approx-badge:hover {
+      background: #c00;
+      color: #fff;
+    }
+
+    /* ----- footprint calculator ----- */
+    .calc {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      background: #f9f9f9;
+    }
+
+    .calc h3 {
+      margin-top: 0;
+    }
+
+    .calc label {
+      display: block;
+      font-size: 0.9rem;
+      margin: 0.8rem 0 0.1rem;
+      color: #444;
+      font-family: system-ui, sans-serif;
+    }
+
+    .calc label output {
+      font-weight: 700;
+      color: #c00;
+    }
+
+    .calc input[type=range] {
+      width: 100%;
+      accent-color: #c00;
+    }
+
+    .calc .boundary-switch {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1.2rem 0 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .calc .boundary-switch button {
+      flex: 1;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #555;
+      font-size: 0.9rem;
+      font-family: system-ui, sans-serif;
+    }
+
+    .calc .boundary-switch button.active {
+      background: #c00;
+      border-color: #c00;
+      color: #fff;
+    }
+
+    .calc .calc-out {
+      font-size: 1rem;
+      line-height: 1.8;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .calc .calc-out b {
+      color: #c00;
+    }
+
+    .calc .slider-bar-track {
+      height: 7px;
+      background: #eee;
+      border-radius: 2px;
+      margin: 2px 0 0;
+      overflow: hidden;
+    }
+
+    .calc .slider-bar {
+      height: 7px;
+      width: 0%;
+      background: #3B82F6;
+      border-radius: 2px;
+      transition: width 0.15s ease;
+    }
+
+    .calc .slider-bar.carbon {
+      background: #c00;
+    }
+
+    .calc .slider-share {
+      font-size: 0.75rem;
+      color: #888;
+      font-family: system-ui, sans-serif;
+      margin: 1px 0 0.6rem;
+    }
+
+    @media (max-width: 600px) {
+      .chart-row {
+        grid-template-columns: 130px 1fr 110px;
+      }
+
+      .chart-label .title {
+        font-size: 13px;
+      }
+
+      .chart-label .subtitle {
+        font-size: 11px;
+      }
+
+      .chart-value {
+        font-size: 11px;
+      }
+    }
+
+    /* ----- Rollover Definition Tooltips ----- */
+    .tooltip-trigger {
+      position: relative;
+      border-bottom: 1px dashed #c00;
+      cursor: help;
+      color: inherit;
+      font-style: inherit;
+      font-weight: inherit;
+    }
+
+    .tooltip-trigger::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 135%;
+      /* Position above the text */
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      width: 280px;
+      padding: 10px 14px;
+      background: rgba(33, 33, 33, 0.95);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.8rem;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.4;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1000;
+      white-space: pre-line;
+      text-align: left;
+    }
+
+    /* Tooltip Arrow */
+    .tooltip-trigger::before {
+      content: "";
+      position: absolute;
+      bottom: 135%;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      border-width: 6px 6px 0;
+      border-style: solid;
+      border-color: rgba(33, 33, 33, 0.95) transparent;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1000;
+    }
+
+    /* Show tooltip on hover or keyboard focus */
+    .tooltip-trigger:hover::after,
+    .tooltip-trigger:focus::after,
+    .tooltip-trigger:hover::before,
+    .tooltip-trigger:focus::before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Prevent clipping or horizontal scroll on small viewports */
+    @media (max-width: 600px) {
+      .tooltip-trigger::after {
+        width: 220px;
+        font-size: 0.75rem;
+        padding: 8px 12px;
+      }
+    }
+
+    /* Demands list styles */
+    .demands-list {
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .demands-list li {
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    .demands-list li b {
+      color: #1e3a8a;
+    }
+  </style>
+</head>
+
+<body link="red">
+  <br>
+  <a href="http://glia.ca/" target="_blank" rel="noopener"><img src="img/glia-bw.webp" width="20%" height="20%"
+      alt="glia.ca"></a><br><br>
+
+  <h1>The Footprint Index</h1>
+  <h2>AI vs Veganism</h2>
+  <h5>June 2026</h5>
+  <p style="font-size:0.72rem;color:#999;line-height:1.5;margin-top:0.25rem;">Figures drawn from peer-reviewed research;
+    companion analysis, <a href="https://glia.ca/2026/ccai-2026/" target="_blank" rel="noopener">The Water &amp;
+      Wattage of #genAI in Context</a>. From a prompt by David Jhave Johnston.</p>
+
+  <p class="abstract" style="font-size:1.25rem;line-height:1.6;">Changing what humanity eats avoids far more greenhouse
+    gas than shutting down all artificial intelligence &mdash; on emissions, by a margin of roughly 130 to 1. On
+    water, the world's golf courses out-consume all of artificial intelligence by five to thirteen times. Every figure
+    below is drawn from peer-reviewed research and listed in full.</p>
+
+  <!-- ===================== HARPER'S-INDEX-STYLE TEXT LIST ===================== -->
+  <div style="text-align:center;margin:2.5rem 0 0.25rem;" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="13" width="4" height="7" fill="#c9c9c9" />
+      <rect x="10" y="9" width="4" height="11" fill="#c9c9c9" />
+      <rect x="17" y="4" width="4" height="16" fill="#b00000" />
+    </svg>
+  </div>
+  <h3 style="text-align:center;margin-top:0.25rem;">The Index</h3>
+
+  <p style="font-size:0.85rem;color:#777;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.25rem;">
+    Greenhouse gases avoided each year, in billion metric tons of CO&#8322;e, if&hellip;</p>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; all humanity ate a <b>vegan</b> diet</span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">6.6</span>
+    <span style="font-size:0.78rem;color:#999;">[1]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; all humanity ate a <b>vegetarian</b> diet</span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">4.5</span>
+    <span style="font-size:0.78rem;color:#999;">[2]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; all <b>artificial intelligence</b> were permanently shut down</span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">0.05</span>
+    <span style="font-size:0.78rem;color:#999;">[3]</span>
+  </div>
+
+  <p style="font-size:0.85rem;color:#777;text-transform:uppercase;letter-spacing:0.06em;margin:1.5rem 0 0.25rem;">
+    CO&#8322;e avoided over fifty years (1976&ndash;2026), in billion metric tons, by&hellip;</p>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; half a century of global <b>veganism</b></span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">~330</span>
+    <span style="font-size:0.78rem;color:#999;">[4]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; half a century of global <b>vegetarianism</b></span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">~225</span>
+    <span style="font-size:0.78rem;color:#999;">[5]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; half a century with all <b>AI banned</b></span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">&lt;0.5</span>
+    <span style="font-size:0.78rem;color:#999;">[6]</span>
+  </div>
+
+  <p style="font-size:0.85rem;color:#777;text-transform:uppercase;letter-spacing:0.06em;margin:1.5rem 0 0.25rem;">
+    CO&#8322; drawn back out of the air by rewilding freed land, in billion metric tons, if we&hellip;</p>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; ended <b>animal agriculture</b> and let pasture revert to wild</span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">330&ndash;550</span>
+    <span style="font-size:0.78rem;color:#999;">[7]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; dismantled all <b>computing</b> and rewilded the data centers</span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">&asymp; 0</span>
+    <span style="font-size:0.78rem;color:#999;">[8]</span>
+  </div>
+
+  <p style="font-size:0.85rem;color:#777;text-transform:uppercase;letter-spacing:0.06em;margin:1.5rem 0 0.25rem;">
+    Blue water consumed over fifty years, in billion cubic meters, by&hellip;</p>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; the world's <b>golf courses</b></span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">~200</span>
+    <span style="font-size:0.78rem;color:#999;">[9]</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:0.6rem;border-bottom:1px solid #eee;padding:0.55rem 0;">
+    <span style="flex:1;">&hellip; the entire existence of <b>artificial intelligence</b></span>
+    <span style="font-weight:700;color:#c00;white-space:nowrap;">15&ndash;40</span>
+    <span style="font-size:0.78rem;color:#999;">[10]</span>
+  </div>
+
+  <!-- ===================== VISUAL INDEX DIVIDER (examine-the-data) ===================== -->
+  <div style="text-align:center;margin:3.5rem 0 2.5rem;" aria-hidden="true">
+    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="14" cy="14" r="10" stroke="#c9c9c9" stroke-width="1.5" fill="none" />
+      <line x1="21.2" y1="21.2" x2="29" y2="29" stroke="#c9c9c9" stroke-width="2" stroke-linecap="round" />
+      <rect x="9.5" y="14" width="2.2" height="5" rx="0.4" fill="#c9c9c9" />
+      <rect x="12.9" y="11" width="2.2" height="8" rx="0.4" fill="#c9c9c9" />
+      <rect x="16.3" y="8.5" width="2.2" height="10.5" rx="0.4" fill="#b00000" />
+    </svg>
+  </div>
+
+  <!-- ===================== CHART 1: ANNUAL EMISSIONS ===================== -->
+  <div class="emissions-chart" style="margin:2.5rem 0;">
+    <h2>Annual CO&#8322; emissions <b>avoided</b> &mdash; if all humans changed</h2>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">All humans were <b>Vegan</b></span></div>
+      <div class="chart-value">6.6 Gt</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 100%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">All humans were <b>Vegetarian</b></span></div>
+      <div class="chart-value">~4.5 Gt</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 68%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">All <b>AI shut</b> down</span></div>
+      <div class="chart-value">0.05 Gt</div>
+      <div class="chart-bar-container tiny">
+        <div class="chart-bar ai" style="width: 0.76%;"></div>
+      </div>
+    </div>
+    <p class="chart-notes">Shutting down all artificial intelligence avoids about 1/130th of the carbon that a global
+      vegan diet would.</p>
+  </div>
+
+  <!-- ===================== CHART 2: 50-YEAR CUMULATIVE ===================== -->
+  <div class="emissions-chart" style="margin:2.5rem 0;">
+    <h2>CO&#8322; emissions <b>avoided</b> over fifty years (1976&ndash;2026)</h2>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">Fifty years <b>Vegan</b></span></div>
+      <div class="chart-value">~330 Gt</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 100%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">Fifty years <b>Vegetarian</b></span></div>
+      <div class="chart-value">~225 Gt</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 68%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">Fifty years <b>no AI</b></span></div>
+      <div class="chart-value">&lt;0.5 Gt</div>
+      <div class="chart-bar-container tiny">
+        <div class="chart-bar ai" style="width: 0.76%;"></div>
+      </div>
+    </div>
+    <p class="chart-notes">Banning AI for half a century avoids less than two weeks of present-day global food
+      emissions.</p>
+  </div>
+
+  <!-- ===================== CHART 3: SEQUESTRATION ===================== -->
+  <div class="emissions-chart" style="margin:2.5rem 0;">
+    <h2>CO&#8322; <b>drawn down</b> by rewilding the freed land</h2>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">End <b>animal agriculture</b></span></div>
+      <div class="chart-value">330&ndash;550 Gt</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 100%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">End all <b>computing</b></span></div>
+      <div class="chart-value">&asymp; 0</div>
+      <div class="chart-bar-container tiny">
+        <div class="chart-bar ai" style="width: 0.5%;"></div>
+      </div>
+    </div>
+    <p class="chart-notes">Livestock occupies roughly 3.1 billion hectares; data centers occupy a rounding error.
+      Dismantling computing frees essentially no land for regrowth.</p>
+  </div>
+
+  <!-- ===================== CHART 4: WATER ===================== -->
+  <div class="emissions-chart water" style="margin:2.5rem 0;">
+    <h2>Blue water <b>consumed</b> over fifty years</h2>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">World's <b>golf courses</b></span></div>
+      <div class="chart-value">~200 bn m&sup3;</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar" style="width: 100%;"></div>
+      </div>
+    </div>
+    <div class="chart-row">
+      <div class="chart-label"><span class="title">All <b>artificial intelligence</b></span></div>
+      <div class="chart-value">~15&ndash;40 bn m&sup3;</div>
+      <div class="chart-bar-container">
+        <div class="chart-bar ai" style="width: 20%;"></div>
+      </div>
+    </div>
+    <p class="chart-notes">Measured the same way on both sides &mdash; consumptive blue water only. Golf consumes five
+      to thirteen times more than all of artificial intelligence.</p>
+  </div>
+
+  <!-- ===================== CLOSING SECTION: TWO REAL PROBLEMS ===================== -->
+  <div style="text-align:center;margin:3.5rem 0 0.25rem;" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="13" width="4" height="7" fill="#c9c9c9" />
+      <rect x="10" y="9" width="4" height="11" fill="#c9c9c9" />
+      <rect x="17" y="4" width="4" height="16" fill="#b00000" />
+    </svg>
+  </div>
+  <blockquote
+    style="border-left:5px solid #c00;font-size:1.45rem;line-height:1.45;font-style:italic;color:#1e293b;margin:2rem 0;padding:0.75rem 1.75rem;">
+    AI's carbon problem is <b style="color:#c00;font-style:normal;">when</b>, not
+    <b style="color:#c00;font-style:normal;">how much</b>: per-query emissions keep falling even as the total keeps
+    climbing &mdash; the buildout outruns every efficiency gain.
+    <span style="display:block;font-size:0.85rem;font-style:normal;color:#666;margin-top:0.85rem;">Google's absolute
+      emissions rose 51% over 2019 while its energy per prompt fell 33-fold. Today AI is a small wedge of global carbon,
+      but the fastest-growing industrial electricity load on Earth.
+      &mdash; <a href="https://sustainability.google/google-2025-environmental-report/" target="_blank"
+        rel="noopener">Google Environmental Report 2025</a>.</span>
+  </blockquote>
+
+  <blockquote
+    style="border-left:5px solid #c00;font-size:1.45rem;line-height:1.45;font-style:italic;color:#1e293b;margin:2rem 0;padding:0.75rem 1.75rem;">
+    AI's water problem is <b style="color:#c00;font-style:normal;">where</b>, not
+    <b style="color:#c00;font-style:normal;">how much</b>: about two-thirds of new US data centers sit in water-stressed
+    regions.
+    <span style="display:block;font-size:0.85rem;font-style:normal;color:#666;margin-top:0.85rem;">An aquifer is local;
+      the aggregate total is not. A modest global footprint can still drain a single watershed.
+      &mdash; <a href="https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/" target="_blank"
+        rel="noopener">Bloomberg 2025</a> (WRI / DC&nbsp;Byte data).</span>
+  </blockquote>
+
+  <!-- ===================== SOURCES ===================== -->
+  <div class="references">
+    <h3>Sources</h3>
+    <div class="reference-item"><b>[1]</b> Poore, J., &amp; Nemecek, T. (2018). Reducing food's environmental impacts
+      through producers and consumers. <i>Science</i>, 360(6392), 987&ndash;992.
+      <a href="https://doi.org/10.1126/science.aaq0216" target="_blank" rel="noopener">doi:10.1126/science.aaq0216</a>.
+      A plant-based shift cuts food's greenhouse gases by about 49%; food &asymp; 13.6 Gt CO&#8322;e/yr, so 13.6 &times;
+      0.49 &asymp; 6.6 Gt/yr.</div>
+    <div class="reference-item"><b>[2]</b> Scarborough, P., et al. (2023). Vegans, vegetarians, fish-eaters and
+      meat-eaters in the UK show discrepant environmental impacts. <i>Nature Food</i>, 4(7), 565&ndash;574.
+      <a href="https://doi.org/10.1038/s43016-023-00795-w" target="_blank"
+        rel="noopener">doi:10.1038/s43016-023-00795-w</a>. Retained dairy and eggs leave vegetarians at roughly
+      65&ndash;75% of the vegan saving.</div>
+    <div class="reference-item"><b>[3]</b> de Vries-Gao, A. (2025). <i>Patterns</i> (Cell Press).
+      <a href="https://www.cell.com/patterns/fulltext/S2666-3899(25)00278-8" target="_blank" rel="noopener">Full
+        text</a>. The first peer-reviewed isolation of AI's specific share: 32.6&ndash;79.7 Mt CO&#8322; in 2025
+      (0.033&ndash;0.080 Gt). For context, all data centers &asymp; 182 Mt
+      (<a href="https://www.iea.org/reports/energy-and-ai" target="_blank" rel="noopener">IEA, <i>Energy and AI</i>,
+        2025</a>).</div>
+    <div class="reference-item"><b>[4]</b> 6.6 Gt/yr &times; 50 &asymp; 330 Gt. An illustrative ceiling: historical food
+      emissions were lower than today's.</div>
+    <div class="reference-item"><b>[5]</b> 4.5 Gt/yr &times; 50 &asymp; 225 Gt, with the same ceiling caveat as [4].</div>
+    <div class="reference-item"><b>[6]</b> AI's footprint was negligible before about 2012; integrating the actual curve
+      gives a cumulative total under 0.5 Gt &mdash; less than two weeks of present-day global food emissions.</div>
+    <div class="reference-item"><b>[7]</b> Hayek, M. N., et al. (2020). The carbon opportunity cost of animal-sourced
+      food production on land. <i>Nature Sustainability</i>, 3(11), 939&ndash;942.
+      <a href="https://www.nature.com/articles/s41893-020-00603-4" target="_blank" rel="noopener">Full text</a>.
+      Releasing roughly 3.1 billion hectares of grazing and feed cropland could sequester 332&ndash;547 GtCO&#8322; as
+      vegetation matures over decades.</div>
+    <div class="reference-item"><b>[8]</b> The global land footprint of data centers is negligible; dismantling them
+      frees essentially no land for ecological regrowth.</div>
+    <div class="reference-item"><b>[9]</b> <a
+        href="https://www.usga.org/content/dam/usga/pdf/Water%20Resource%20Center/how-much-water-does-golf-use.pdf"
+        target="_blank" rel="noopener">USGA water survey</a>; Shaddox, T. W., et al. (2022). <i>Crop, Forage &amp;
+      Turfgrass Management</i>, 8(1), e20145.
+      <a href="https://doi.org/10.1002/cft2.20145" target="_blank" rel="noopener">doi:10.1002/cft2.20145</a>. US golf
+      &asymp; 2.07 billion m&sup3;/yr over ~16,000 courses, scaled to ~38,000 courses worldwide &asymp; ~4 billion
+      m&sup3;/yr, or ~200 billion m&sup3; over fifty years (range 175&ndash;250).</div>
+    <div class="reference-item"><b>[10]</b> de Vries-Gao, A. (2025). <i>Patterns</i> &mdash; AI's water footprint reaches
+      312.5&ndash;764.6 billion liters (0.31&ndash;0.76 billion m&sup3;) in 2025; &times; 50 &asymp; 15&ndash;40 billion
+      m&sup3;. By a broader withdrawal boundary (most water returned), 4.2&ndash;6.6 billion m&sup3;/yr by 2027
+      (<a href="https://cacm.acm.org/sustainability-and-computing/making-ai-less-thirsty/" target="_blank"
+        rel="noopener">Li, Yang, Islam &amp; Ren, 2025, CACM</a>).</div>
+  </div>
+
+  <div style="text-align: center; margin: 1.5rem 0;">
+    <a href="http://glia.ca/" target="_blank" rel="noopener">
+      <img src="img/glia-bw.webp" style="width: 20%; max-width: 150px; height: auto;" alt="glia.ca">
+    </a>
+  </div>
+
+  <p style="font-weight: 300; text-align: left; color: #555; font-size: 0.85rem;">
+    All works and media on <a href="https://glia.ca" target="_blank" rel="noopener">Glia.ca</a> by David Jhave
+    Johnston
+    are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC
+      BY-NC-SA 4.0</a>.<br><br>
+    Jhave is currently an AI-narrative researcher at the UiB <a href="https://www.uib.no/en/cdn" target="_blank"
+      rel="noopener">Centre for Digital
+      Narrative</a> (2023–27) with the Extending Digital Narrative project.<br><br>
+    This work was partially supported by the Research Council of Norway through its Centres of Excellence scheme,
+    project number 332643 (Center for Digital Narrative), and its SAMKUL project scheme, project number 335129
+    (Extending Digital Narrative).
+  </p>
+
+
+</body>
+
+</html>
